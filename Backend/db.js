@@ -8,12 +8,6 @@ const connectDB = async () => {
         });
         console.log('Connected to MongoDB');
         const db = mongoose.connection;
-        const foodItemsCollection = db.collection("food_items");
-        const foodCatCollection=db.collection("foodCategory")
-        const data = await foodItemsCollection.find({}).toArray();
-        const catData = await foodCatCollection.find({}).toArray();
-        global.food_item = data;
-        global.food_cat = catData;
     } catch (error) {
         console.error('Error connecting to MongoDB:', error);
     }
