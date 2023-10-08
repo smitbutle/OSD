@@ -8,6 +8,8 @@ require('dotenv').config();
 router.post('/reg', [
   body('email').isEmail(),
   body('name').isLength(),
+  body('phone').isLength({min:10}),
+  body('name').isLength(),
 ], async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -16,10 +18,11 @@ router.post('/reg', [
   try {
     await User.create({
       name: req.body.name,
-      school: req.body.school,
+      phone: req.body.phone,
       email: req.body.email,
-      location: req.body.location,
-      laptop:req.body.laptop,
+      college: req.body.college,
+      yearofstudy: req.body.yearofstudy,
+      dualLaptop:req.body.dualLaptop,
     });
     res.json({ success: true });
   } catch (err) {

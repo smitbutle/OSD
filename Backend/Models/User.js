@@ -1,12 +1,11 @@
 const mongoose=require('mongoose');
 const {Schema}=mongoose;
-
 const UserSchema = new Schema({
     name:{
         type:String,
         required:true
     },
-    school:{
+    phone:{
         type:String,
         required:true
     },
@@ -14,14 +13,18 @@ const UserSchema = new Schema({
         type:String,
         required:true
     },
-    laptop:{
+    college:{
+        type:String,
+        required:true
+    },
+    yearofstudy:{
+        type:String,
+        required:true
+    },
+    dualLaptop:{
         type:Boolean,
         required:true
     },
-    date:{
-        type:Date,
-        default:Date.now
-    }
 });
 
 module.exports=mongoose.model('user',UserSchema)
