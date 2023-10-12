@@ -17,13 +17,17 @@ const UserSchema = new Schema({
         type:String,
         required:true
     },
-    yearofstudy:{
+    yearOfStudy:{
         type:String,
         required:true
     },
-    dualLaptop:{
+    isDualBooted:{
         type:Boolean,
         required:true
+    },
+    referralCode:{
+        type:String,
+        required:false
     },
 });
 
