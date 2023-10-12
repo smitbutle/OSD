@@ -1,0 +1,110 @@
+
+
+.register {
+    width: 60vw;
+    position: relative;
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    backdrop-filter: blur(3px);
+    border: 2px solid rgba(255, 170, 0, 0.56);
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 0%, 0.1);
+}
+  
+form {
+    width: 50%;
+    color: white;
+    padding: 30px;
+}
+
+.inputLabels {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 5px #3b3b3b;
+}
+
+.submitSection {
+    height: 120px;
+}
+
+.submitButton {
+    padding: 16px 24px 32px 24px;
+}
+
+select.mySelectArrow {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 22px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, transparent 50%, #000000 50%, #5e6669 100%),
+        linear-gradient(135deg, #5e6669 0%, #000000 50%, transparent 50%);
+    background-position: calc(100% - 20px) center, calc(100% - 10px) center;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+}
+
+input, select {
+    width: 94%;
+    margin: 8px 0 12px 0;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem !important;
+    height: 2rem !important;
+    padding: 0.5rem 0 0.5rem 0;
+    background-color: #ecf0f3;
+    /* box-shadow: inset 6px 6px 6px #ced1d4, inset -6px -6px 6px #fff; */
+    color: #000000;
+}
+input:-webkit-autofill::first-line {font-size: 1rem !important; color: #000000 !important;}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #000000;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 50px 50px #ecf0f3;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding-left: 3%;
+    padding-right: 3%;
+    caret-color: #000000;
+}
+
+select {
+    height: 3rem !important;
+    padding: 0.5rem 0.8rem !important;
+    width: 100%;
+}
+
+input[type="submit"] {
+    width: auto !important;
+    padding: 0 3rem !important;
+    margin: 2.5rem auto 0 !important;
+    height: 3rem !important;
+    font-size: 1.2rem !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .register {
+        width: 100%;
+        border: 1px solid hsla(0, 0%, 100%, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.568);
+    }
+
+    form {
+        width: 100%;
+    }
+
+}
