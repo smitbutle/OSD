@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styles from './Register.module.css'
 import axios from 'axios'
 import swal from 'sweetalert2'
@@ -11,6 +11,7 @@ const API = axios.create({
     // baseURL: 'https://linuxdiary-4-0-backend.onrender.com',
     baseURL: 'http://localhost:5001/api',
 })
+
 
 const Register = () => {
 
@@ -135,6 +136,23 @@ const Register = () => {
         }
 
     }
+
+    useEffect(() => {
+        const handleMouseMove = e => {
+          for (const card of document.getElementsByClassName("card")) {
+            const rect = card.getBoundingClientRect(),
+              x = e.clientX - rect.left,
+              y = e.clientY - rect.top;
+    
+            card.style.setProperty("--mouse-x", `${x}px`);
+            card.style.setProperty("--mouse-y", `${y}px`);
+          };
+        };
+    
+        window.onload = function() {
+          document.getElementById("cards").onmousemove = handleMouseMove;
+        };
+      }, []);
 
     return (
         <div id='cards'>

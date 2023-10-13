@@ -6,7 +6,7 @@ const Info = () => {
             <h1>WHAT IS OSD?</h1>
             <h1>AND WHAT WILL YOU LEARN?</h1>
             <div>
-                <img src="./public/assets/OSD.png" alt="osd" className={styles.imageBig}/>
+            <img src="https://i.ibb.co/MNjkLBr/OSD-1.png" alt="OSD-1" border="0" className={styles.imageBig}/>
             </div>
             <div className={styles.text}>
                 <p>
@@ -14,8 +14,8 @@ const Info = () => {
                 </p>
             </div>
             <div className={styles.imgSec}>
-                <img src="./public/assets/3.png" alt="git"className={styles.imageSmall} />
-                <img src="./public/assets/4.png" alt="github" className={styles.imageSmall}/>
+            <img src="https://i.ibb.co/CWRsb6Q/4.png" alt="4" border="0" className={styles.imageSmall} />
+                <img src="https://i.ibb.co/3s0QJ9G/3.png" alt="3" border="0" className={styles.imageSmall}/>
             </div>
             <div className={styles.text}>
                 <p>
