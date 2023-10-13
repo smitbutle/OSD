@@ -4,7 +4,8 @@
     
     align-items: center;
     justify-content: center;
-    
+    text-align: center !important;
+
     width: 60vw;
     height: 100%;
 
