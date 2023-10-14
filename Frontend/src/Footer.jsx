@@ -1,6 +1,5 @@
 import React from 'react'
 import './Footer.css'
-
 function Footer() {
     function goToHome() {
         const home = document.getElementById('root'); // Change 'targetElement' to the actual ID of your target element
@@ -18,14 +17,14 @@ function Footer() {
     }
 
     return (
-        <div className='footer-bg '>
-            
+        <div className='footer-bg'>
+
             <div className='footer glass'>
                 <div className='wlug-logo padding1rem'>
-                    <img src="./images/WLUG_black.png" alt='' />
-                    <div>
-                        <p>&#169; 2023 WCEWLUG, ALL RIGHTS RESERVED</p>
-                    </div>
+                    <img src="https://i.ibb.co/51r60WH/logo.png" alt="logo" border="0"/>
+                        <div>
+                            <p>&#169; 2023 WCEWLUG, ALL RIGHTS RESERVED</p>
+                        </div>
                 </div>
                 <div className='smedia-links padding1rem'>
                     <p className='stay_tuned'>Stay tuned!</p>
@@ -105,7 +104,6 @@ function Footer() {
 
 
                     </div>
-
                 </div>
 
                 <div className='navli padding1rem'>
@@ -119,7 +117,6 @@ function Footer() {
                 <div className='policies padding1rem'>
                     <div>
                         <a
-                            // href='https://wiki.wcewlug.org/policies/privacy-policy'
                             href='https://github.com/Walchand-Linux-Users-Group/gitbook/blob/wiki/policies/privacy-policy.md'
                             target='_blank'
                             rel='noreferrer'
@@ -129,7 +126,6 @@ function Footer() {
                     </div>
                     <div>
                         <a
-                            // href='https://wiki.wcewlug.org/policies/terms-and-conditions'
                             href='https://github.com/Walchand-Linux-Users-Group/gitbook/blob/wiki/policies/terms-and-conditions.md'
                             target='_blank'
                             rel='noreferrer'

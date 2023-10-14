@@ -2,33 +2,47 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #2D2D2D;
-
+  background-color: #0b0b0b;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
-:root {
-  --bg-color: 2D2D2D;
+
+  --bg-color: #0b0b0b;
   --card-color: rgb(23, 23, 23);
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  background-color: var(--bg-color);
+  color: #a0a5a8;
+  overflow-x: hidden;
+}
+
+
 
 #cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;  
+  gap: 8px;
   max-width: 916px;
   width: calc(100% - 20px);
   justify-content: center;
   margin: 6rem auto;
 }
 
-#cards:hover > .card::after {
+#cards:hover>.card::after {
   opacity: 1;
 }
 
@@ -59,24 +73,20 @@
 }
 
 .card::before {
-  background: radial-gradient(
-    90vw circle at var(--mouse-x) var(--mouse-y), 
-    rgba(184, 128, 17, 0.03),
-    transparent 40%
-  );
+  background: radial-gradient(90vw circle at var(--mouse-x) var(--mouse-y),
+      rgba(184, 128, 17, 0.03),
+      transparent 40%);
   z-index: 3;
 }
 
-.card::after {  
-  background: radial-gradient(
-    90vw circle at var(--mouse-x) var(--mouse-y), 
-    rgba(184, 128, 17, 0.2),
-    transparent 40%
-  );
+.card::after {
+  background: radial-gradient(90vw circle at var(--mouse-x) var(--mouse-y),
+      rgba(184, 128, 17, 0.2),
+      transparent 40%);
   z-index: 1;
 }
 
-.card > .card-content {
+.card>.card-content {
   background-color: var(--card-color);
   border-radius: inherit;
   display: flex;
@@ -88,30 +98,9 @@
   z-index: 2;
 }
 
-html{
-  margin: 0;
-  padding: 0;
-}
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  background-color: #2D2D2D;
-  color: #a0a5a8;
-}
 
-
-body {
-  align-items: center;
-  background-color: var(--bg-color);
-  display: flex;
-  justify-content: center;
-  margin: 0px;
-  padding: 0px;
+@media only screen and (max-width: 768px) {
+  html{
+    font-size: 8px;
+  }
 }

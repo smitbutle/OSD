@@ -1,18 +1,14 @@
 .hero {
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
-
-    width: 60vw;
     height: 100%;
-
-    margin: 6rem;
+    margin: 8rem 5rem 6rem 5rem;
+    /* background-color: yellowgreen; */
 }
 
 .logo {
-
     width: 35vw;
     display: flex;
     position: relative;
@@ -32,10 +28,12 @@
 
 
 .text {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     font-weight: bold;
     color: white;
+    width: 70%;
+    /* background-color: #e66203; */
 }
 
 
@@ -49,19 +47,27 @@
     cursor: pointer;
 
     font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    height: 4rem;
+    height: 5rem;
     overflow: hidden;
 
-    padding: 0 1rem;
+    padding: 0 2rem;
     text-align: center;
     width: 100%;
 
     border: 0;
     transition: box-shadow .2s;
-}
+}   
 
 .button:hover {
-    box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+    box-shadow: rgba(255, 77, 0, 0.5) 0 0px 24px;
+    color: black;
 }
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 60vw;
+    }
+  }
+  

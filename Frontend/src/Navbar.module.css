@@ -1,0 +1,66 @@
+/* Navbar.module.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 98vw;
+    height: 7%;
+    margin: 0;
+    padding: 0 2vw 0 0;
+    z-index: 1000;
+    background-color: rgba(38, 38, 38, 0.805);
+    backdrop-filter: blur(10px);
+    transition: background-color 0.5s ease, backdrop-filter 0.5s ease;
+    border: 0px solid transparent inset;
+    border-radius: 0 0 20px 20px;
+}
+
+.scrolled {
+    background-color: #0b0b0b85;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.logoImage {
+    max-width: 100px;
+}
+
+.navItems {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 1.4rem;
+}
+.navItem {
+    position: relative;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.navItem:hover {
+color:white
+}
+
+.navItem::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: width 0.2s ease;
+}
+
+.navItem:hover::after {
+    width: 100%;
+    right: 0;
+    left: auto;
+    
+}
