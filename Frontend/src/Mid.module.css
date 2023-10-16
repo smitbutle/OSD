@@ -5,13 +5,13 @@
     .bg img {
         display: none;
     }
-    
+
     .watch {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
     .watch h1 {
         /* padding: 1rem;
         border-radius: 20px;
@@ -26,14 +26,14 @@
         color: #ffffff;
         text-shadow: 0px 0px 5px rgb(0, 0, 0);
     }
-    
+
     .vid {
         display: flex;
         justify-content: center;
         width: 80%;
         padding: 3% 10% 5% 10%;
     }
-    
+
     .vid video {
         width: 100%;
         height: auto;
@@ -46,7 +46,8 @@
 @media screen and (max-width: 768px) {
     .bg img {
         height: 100%;
-        width: 100%;
+        width: 101%;
+        margin-left: -0.5%;
     }
 
 
@@ -71,13 +72,42 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        display: none;
+    }
+
+    .reaper {
+        position: absolute;
+        top: 66%;
+        width: 100%;
+        color: black;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .reaper img {
+        height: 35%;
+        width: 35%;
     }
 
     .vid {
         position: absolute;
         top: 48%;
+        top: 35%;
         display: flex;
         justify-content: center;
+    }
+
+    .text {
+        
+        font-family: 'Franklin Gothic Medium',sans-serif;
+        text-align: justify;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
     }
 
     h1 {
