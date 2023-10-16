@@ -9,7 +9,7 @@ function Footer() {
         }
     }
     function goToRegister() {
-        const register = document.getElementById('cards'); // Change 'targetElement' to the actual ID of your target element
+        const register = document.getElementById('snapRegister'); // Change 'targetElement' to the actual ID of your target element
 
         if (register) {
             register.scrollIntoView({ behavior: 'smooth' });
