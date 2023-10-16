@@ -97,10 +97,16 @@ body {
   position: absolute;
   z-index: 2;
 }
-
+#loader svg{
+  width: calc(100% - 50px);
+  justify-content: center;
+}
 
 @media only screen and (max-width: 768px) {
   html{
     font-size: 8px;
+  }
+  .card{
+    width: 80%;
   }
 }

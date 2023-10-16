@@ -5,6 +5,7 @@ import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,20 +21,67 @@ const Navbar = () => {
     };
   }, [isScrolled]);
 
+  function goHome() {
+    const home = document.getElementById("root"); // Change 'targetElement' to the actual ID of your target element
+
+    if (home) {
+      home.scrollIntoView({ behavior: "smooth" });
+      setShowMenu(false); // Close the menu on click
+    }
+  }
+
+  function goRegister() {
+    const register = document.getElementById("cards"); // Change 'targetElement' to the actual ID of your target element
+
+    if (register) {
+      register.scrollIntoView({ behavior: "smooth" });
+      setShowMenu(false); // Close the menu on click
+    }
+  }
+
+  function handleMenuClick() {
+    setShowMenu(!showMenu);
+  }
+
   return (
-    <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
-      <div className={styles.logo}>
-        <img
-          src="https://i.ibb.co/51r60WH/logo.png" alt="logo" border="0"
-          className={styles.logoImage}
-        />
-      </div>
-      <ul className={styles.navItems}>
-        <li className={styles.navItem}>Home</li>
-        <li className={styles.navItem}>Register</li>
-        <li className={styles.navItem}>About Us</li>
-      </ul>
-    </nav>
+    <header>
+      <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
+        <div className={styles.logo}>
+          <img
+            src="https://i.ibb.co/51r60WH/logo.png"
+            alt="logo"
+            border="0"
+            className={styles.logoImage}
+          />
+        </div>
+        <div className={styles.hamburger} onClick={handleMenuClick}>
+        {showMenu ? "" : "☰"}
+        </div>
+        <ul
+          className={`${styles.navItems} ${showMenu ? styles.active : ""}`}
+        > 
+        <div className={styles.hamburger} onClick={handleMenuClick}>
+        ✕
+        </div>
+          <li className={styles.navItem} onClick={goHome}>
+            Home
+          </li>
+          <li className={styles.navItem} onClick={goRegister}>
+            Register
+          </li>
+          <li className={styles.navItem}>
+            <a
+              href="https://www.wcewlug.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+
+              About Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 

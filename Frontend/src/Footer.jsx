@@ -9,7 +9,7 @@ function Footer() {
         }
     }
     function goToRegister() {
-        const register = document.getElementById('register'); // Change 'targetElement' to the actual ID of your target element
+        const register = document.getElementById('cards'); // Change 'targetElement' to the actual ID of your target element
 
         if (register) {
             register.scrollIntoView({ behavior: 'smooth' });
@@ -108,10 +108,10 @@ function Footer() {
 
                 <div className='navli padding1rem'>
                     <a onClick={goToHome}>Home</a>
+                    <a onClick={goToRegister}>Register</a>
                     <a href='https://www.wcewlug.org/' target='_blank' rel='noreferrer'>
                         About Us
                     </a>
-                    <a onClick={goToRegister}>Register</a>
                 </div>
 
                 <div className='policies padding1rem'>
