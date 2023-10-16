@@ -33,7 +33,7 @@
 }
 
 .navItems {
-    display: none;
+    display: flex;
     /* Hide initially on mobile devices */
     list-style: none;
     gap: 20px;
