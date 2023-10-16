@@ -14,8 +14,12 @@ const Info = () => {
                 </p>
             </div>
             <div className={styles.imageSmall}>
+                <div>
                 <img src="https://i.ibb.co/CWRsb6Q/4.png" alt="4" border="0" />
+                </div>
+                <div>
                 <img src="https://i.ibb.co/3s0QJ9G/3.png" alt="3" border="0" />
+                </div>
             </div>
             <div className={styles.text}>
                 <p>

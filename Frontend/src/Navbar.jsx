@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
@@ -56,6 +56,7 @@ const Navbar = () => {
         </div>
         <div className={styles.hamburger} onClick={handleMenuClick}>
         {showMenu ? "" : "☰"}
+        {/* ☰ */}
         </div>
         <ul
           className={`${styles.navItems} ${showMenu ? styles.active : ""}`}

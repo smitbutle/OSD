@@ -9,7 +9,8 @@ import { InfinitySpin, ThreeDots } from 'react-loader-spinner'
 
 const API = axios.create({
     // baseURL: 'https://linuxdiary-4-0-backend.onrender.com',
-    baseURL: 'http://localhost:5000',
+    // baseURL: 'http://localhost:5000',
+    baseURL: " https://osd-backend-v2.onrender.com"
 })
 
 
@@ -25,7 +26,7 @@ const Register = () => {
         isDualBooted: '',
         referralCode: ''
     })
-
+    
     const handleChange = (event) => {
         event.preventDefault()
 
@@ -54,19 +55,19 @@ const Register = () => {
             console.log(res)
             if (res.status === 201) {
                 swal
-                .fire({
-                    title: 'Registered Successfully!! Check email for confirmation.',
-                    imageHeight: 200,
-                    confirmButtonColor: '#3085d6',
-                    confirmButtonText: 'Continue',
-                    imageUrl:
-                        'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066882/TechnoTweet/hurray_uptaef.png',
-                    customClass: {
-                        popup: 'animated fadeInDown faster',
-                        confirmButton: 'animated bounceIn faster',
-                        cancelButton: 'animated bounceIn faster',
-                    },
-                })
+                    .fire({
+                        title: 'Registered Successfully!! Check email for confirmation.',
+                        imageHeight: 200,
+                        confirmButtonColor: '#3085d6',
+                        confirmButtonText: 'Continue',
+                        imageUrl:
+                            'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066882/TechnoTweet/hurray_uptaef.png',
+                        customClass: {
+                            popup: 'animated fadeInDown faster',
+                            confirmButton: 'animated bounceIn faster',
+                            cancelButton: 'animated bounceIn faster',
+                        },
+                    })
                 return true
             }
             console.log(res)
@@ -312,7 +313,7 @@ const Register = () => {
                                 </div>
                             )} */}
                             {isLoading && (
-                                <div className={styles.submitButton } id='loader'>
+                                <div className={styles.submitButton} id='loader'>
                                     <InfinitySpin
                                         width='100'
                                         color="#ffaa00"

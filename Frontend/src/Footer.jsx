@@ -21,10 +21,10 @@ function Footer() {
 
             <div className='footer glass'>
                 <div className='wlug-logo padding1rem'>
-                    <img src="https://i.ibb.co/51r60WH/logo.png" alt="logo" border="0"/>
-                        <div>
-                            <p>&#169; 2023 WCEWLUG, ALL RIGHTS RESERVED</p>
-                        </div>
+                    <img src="https://i.ibb.co/51r60WH/logo.png" alt="logo" border="0" />
+                    <div>
+                        <p>&#169; 2023 WCEWLUG, ALL RIGHTS RESERVED</p>
+                    </div>
                 </div>
                 <div className='smedia-links padding1rem'>
                     <p className='stay_tuned'>Stay tuned!</p>
@@ -143,7 +143,7 @@ function Footer() {
                         </a>
                     </div>
                 </div>
-                <div className='copyright2'>
+                <div className='copyright2' >
                     <p>&#169; 2023 WCEWLUG, ALL RIGHTS RESERVED</p>
                 </div>
             </div>

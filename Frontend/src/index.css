@@ -30,8 +30,6 @@ body {
   overflow-x: hidden;
 }
 
-
-
 #cards {
   display: flex;
   flex-wrap: wrap;
@@ -42,7 +40,7 @@ body {
   margin: 6rem auto;
 }
 
-#cards:hover>.card::after {
+#cards:hover > .card::after {
   opacity: 1;
 }
 
@@ -73,20 +71,16 @@ body {
 }
 
 .card::before {
-  background: radial-gradient(90vw circle at var(--mouse-x) var(--mouse-y),
-      rgba(184, 128, 17, 0.03),
-      transparent 40%);
+  background: radial-gradient(90vw circle at var(--mouse-x) var(--mouse-y), rgba(184, 128, 17, 0.03), transparent 40%);
   z-index: 3;
 }
 
 .card::after {
-  background: radial-gradient(90vw circle at var(--mouse-x) var(--mouse-y),
-      rgba(184, 128, 17, 0.2),
-      transparent 40%);
+  background: radial-gradient(90vw circle at var(--mouse-x) var(--mouse-y), rgba(184, 128, 17, 0.2), transparent 40%);
   z-index: 1;
 }
 
-.card>.card-content {
+.card > .card-content {
   background-color: var(--card-color);
   border-radius: inherit;
   display: flex;
@@ -97,16 +91,14 @@ body {
   position: absolute;
   z-index: 2;
 }
-#loader svg{
+
+#loader svg {
   width: calc(100% - 50px);
   justify-content: center;
 }
 
 @media only screen and (max-width: 768px) {
-  html{
-    font-size: 8px;
-  }
-  .card{
+  .card {
     width: 80%;
   }
 }
