@@ -37,7 +37,7 @@ body {
   max-width: 916px;
   width: calc(100% - 20px);
   justify-content: center;
-  margin: 6rem auto;
+  margin: 3rem auto;
 }
 
 #cards:hover > .card::after {

@@ -26,7 +26,7 @@ const Register = () => {
         isDualBooted: '',
         referralCode: ''
     })
-    
+
     const handleChange = (event) => {
         event.preventDefault()
 
@@ -180,96 +180,101 @@ const Register = () => {
     }, []);
 
     return (
-        <div id='cards'>
-            <div className='card'>
+        <div className={styles.reg}>
+            <div className={styles.head}>
+                <h1>Register Here</h1>
+            </div>
+            <div id='cards'>
 
-                <div className={styles.register} id="register">
-                    <form className={styles.form} onSubmit={handleSubmit}>
-                        <label htmlFor="name" className={styles.inputLabels}>
-                            {" "}
-                            Name{" "}
-                        </label>
-                        <input
-                            required=""
-                            placeholder="Your Name"
-                            name="name"
-                            id="name"
-                            type="text"
+                <div className='card'>
 
-                            onChange={handleChange}
-                        />
-                        <label htmlFor="email" className={styles.inputLabels}>
-                            {" "}
-                            Email ID{" "}
-                        </label>
-                        <input
-                            required=""
-                            placeholder="Your Email"
-                            name="email"
-                            id="email"
-                            type="email"
+                    <div className={styles.register} id="register">
+                        <form className={styles.form} onSubmit={handleSubmit}>
+                            <label htmlFor="name" className={styles.inputLabels}>
+                                {" "}
+                                Name{" "}
+                            </label>
+                            <input
+                                required=""
+                                placeholder="Your Name"
+                                name="name"
+                                id="name"
+                                type="text"
 
-                            onChange={handleChange}
-                        />
-                        <label htmlFor="phone" className={styles.inputLabels}>
-                            {" "}
-                            Phone Number{" "}
-                        </label>
-                        <input
-                            required=""
-                            placeholder="Your Phone Number"
-                            name="phone"
-                            id="phone"
-                            type="tel"
+                                onChange={handleChange}
+                            />
+                            <label htmlFor="email" className={styles.inputLabels}>
+                                {" "}
+                                Email ID{" "}
+                            </label>
+                            <input
+                                required=""
+                                placeholder="Your Email"
+                                name="email"
+                                id="email"
+                                type="email"
 
-                            onChange={handleChange}
-                        />
-                        <label htmlFor="collegeName" className={styles.inputLabels}>
-                            {" "}
-                            College Name{" "}
-                        </label>
-                        <input
-                            required=""
-                            placeholder="Your College Name"
-                            name="collegeName"
-                            id="collegeName"
-                            type="text"
-                            onChange={handleChange}
-                        />
+                                onChange={handleChange}
+                            />
+                            <label htmlFor="phone" className={styles.inputLabels}>
+                                {" "}
+                                Phone Number{" "}
+                            </label>
+                            <input
+                                required=""
+                                placeholder="Your Phone Number"
+                                name="phone"
+                                id="phone"
+                                type="tel"
 
-                        <label htmlFor="yearOfStudy" className={styles.inputLabels}>
-                            {" "}
-                            Year of Study{" "}
-                        </label>
-                        <br />
+                                onChange={handleChange}
+                            />
+                            <label htmlFor="collegeName" className={styles.inputLabels}>
+                                {" "}
+                                College Name{" "}
+                            </label>
+                            <input
+                                required=""
+                                placeholder="Your College Name"
+                                name="collegeName"
+                                id="collegeName"
+                                type="text"
+                                onChange={handleChange}
+                            />
 
-                        <div className={styles.selectdropdown}>
-                            <select id="yearOfStudy" name="yearOfStudy" required=""
-                                onChange={handleChange} className={styles.mySelectArrow} defaultValue="">
-                                <option value="" disabled defaultValue hidden>
-                                    Select your option
-                                </option>
-                                <option value="First Year">First Year</option>
-                                <option value="Second Year">Second Year</option>
-                                <option value="Third Year">Third Year</option>
-                                <option value="Fourth Year">Fourth Year</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <label htmlFor="isDualBooted" className={styles.inputLabels}>
-                            Do you have dual booted laptop ?{" "}
-                        </label>
-                        <br />
-                        <div className={styles.selectdropdown}>
-                            <select id="isDualBooted" name="isDualBooted" required="" onChange={handleChange} className={styles.mySelectArrow} defaultValue="">
-                                <option value="" disabled defaultValue hidden>
-                                    Select your option
-                                </option>
-                                <option value="true">Yes</option>
-                                <option value="false">No</option>
-                            </select>
-                        </div>
-                        {/* <label htmlFor="transactionId" className={styles.inputLabels}>
+                            <label htmlFor="yearOfStudy" className={styles.inputLabels}>
+                                {" "}
+                                Year of Study{" "}
+                            </label>
+                            <br />
+
+                            <div className={styles.selectdropdown}>
+                                <select id="yearOfStudy" name="yearOfStudy" required=""
+                                    onChange={handleChange} className={styles.mySelectArrow} defaultValue="">
+                                    <option value="" disabled defaultValue hidden>
+                                        Select your option
+                                    </option>
+                                    <option value="First Year">First Year</option>
+                                    <option value="Second Year">Second Year</option>
+                                    <option value="Third Year">Third Year</option>
+                                    <option value="Fourth Year">Fourth Year</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <label htmlFor="isDualBooted" className={styles.inputLabels}>
+                                Do you have dual booted laptop ?{" "}
+                            </label>
+                            <br />
+                            <div className={styles.selectdropdown}>
+                                <select id="isDualBooted" name="isDualBooted" required="" onChange={handleChange} className={styles.mySelectArrow} defaultValue="">
+                                    <option value="" disabled defaultValue hidden>
+                                        Select your option
+                                    </option>
+                                    <option value="true">Yes</option>
+                                    <option value="false">No</option>
+                                </select>
+                            </div>
+                            {/* <label htmlFor="transactionId" className={styles.inputLabels}>
                     {" "}
                     Transaction ID{" "}
                 </label>
@@ -281,24 +286,24 @@ const Register = () => {
                     type="text"
                     onChange={handleChange}
                 /> */}
-                        <label htmlFor="referralCode" className={styles.inputLabels}>
-                            {" "}
-                            Referral Code{" "}
-                        </label>
-                        <input
-                            required=""
-                            placeholder="Referral Code"
-                            name="referralCode"
-                            id="referralCode"
-                            type="text"
-                            onChange={handleChange}
-                        />
-                        <div className={styles.submitSection}>
-                            {!isLoading && (<div className={styles.submitButton}>
-                                <input type="submit" defaultValue="REGISTER" className='button' />
-                            </div>
-                            )}
-                            {/* {isLoading && (
+                            <label htmlFor="referralCode" className={styles.inputLabels}>
+                                {" "}
+                                Referral Code{" "}
+                            </label>
+                            <input
+                                required=""
+                                placeholder="Referral Code"
+                                name="referralCode"
+                                id="referralCode"
+                                type="text"
+                                onChange={handleChange}
+                            />
+                            <div className={styles.submitSection}>
+                                {!isLoading && (<div className={styles.submitButton}>
+                                    <input type="submit" defaultValue="REGISTER" className='button' />
+                                </div>
+                                )}
+                                {/* {isLoading && (
                                 <div className={styles.submitButton}>
                                     <ThreeDots
                                         height="80"
@@ -312,20 +317,20 @@ const Register = () => {
                                     />
                                 </div>
                             )} */}
-                            {isLoading && (
-                                <div className={styles.submitButton} id='loader'>
-                                    <InfinitySpin
-                                        width='100'
-                                        color="#ffaa00"
-                                    />
-                                </div>
-                            )}
+                                {isLoading && (
+                                    <div className={styles.submitButton} id='loader'>
+                                        <InfinitySpin
+                                            width='100'
+                                            color="#ffaa00"
+                                        />
+                                    </div>
+                                )}
 
-                        </div>
-                    </form>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </div></div>
     )
 }
 
