@@ -15,7 +15,7 @@ function App() {
       <Info />
       <Mid />
       <Register />
-      <Footer />npm
+      <Footer />
     </>
   )
 }
