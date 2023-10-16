@@ -3,13 +3,37 @@
 
 @media screen and (min-width: 768px) {
     .bg img {
-        display: none;
+        height: 100%;
+        width: 102%;
+        margin-left: -1%;
     }
 
+
+
+    .bg {
+        width: 100vw;
+        /* background-image: linear-gradient(white, #f5f5f5); */
+        /* background: linear-gradient(#0b0b0b 0%, #0b0b0b 15%, #e1e1e1 15%, rgb(245, 245, 245) 60%, #c1c0c0 84%, #0b0b0b 78%, #0b0b0b 100%); */
+        position: relative;
+        z-index: 0;
+        padding: 0;
+        height: auto;
+    }
+    .mob {
+        display: none;
+    }
+    .pc{
+        display: block;
+        /* position: absolute; */
+        /* top: 0; */
+    }
     .watch {
+
         display: flex;
         justify-content: center;
         align-items: center;
+
+        display: none;
     }
 
     .watch h1 {
@@ -28,6 +52,8 @@
     }
 
     .vid {
+        position: absolute;
+        top: 27%;
         display: flex;
         justify-content: center;
         width: 80%;
@@ -41,9 +67,25 @@
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgb(0, 0, 0);
     }
-    .reaper{
+    .reaper img{
         display: none;
     }
+    .reaper {
+        position: absolute;
+        width: 65%;
+        right:10%;
+        bottom: 30%;
+    }
+    .reaper .text{
+        font-family: 'Franklin Gothic Medium',sans-serif;
+        text-align: justify;
+        color: rgb(0, 0, 0);
+        display: flex;
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+        font-size: 2rem;
+        position: absolute;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -52,7 +94,13 @@
         width: 101%;
         margin-left: -0.5%;
     }
-
+    .mob {
+        display: block;
+    }
+    .pc{
+        display: none;
+        /* position: relative; */
+    }
 
     .bg {
         width: 100vw;

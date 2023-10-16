@@ -6,7 +6,8 @@ const Mid = () => {
       {/* <img src="https://i.ibb.co/sFCSgHc/OSD-1-1.png" alt="bg" /> */}
       {/* <img src="./assets/OSD.svg" alt="bg" /> */}
 
-      <img src="https://i.ibb.co/JtPvvQZ/Copy-of-UI-OSD-2-min.png" alt="Copy-of-UI-OSD-2-min" border="0"></img>
+      <img src="https://i.ibb.co/JtPvvQZ/Copy-of-UI-OSD-2-min.png" alt="Copy-of-UI-OSD-2-min" border="0" className={styles.mob}></img>
+      <img src="https://i.ibb.co/NmJNn4S/Copy-of-UI-OSD-6.png" alt="Copy-of-UI-OSD-6" border="0" className={styles.pc}></img>
       <div className={styles.watch}>
         <h1>Watch Trailer</h1>
       </div>
