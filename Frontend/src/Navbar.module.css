@@ -40,7 +40,9 @@
     font-size: 1.4rem;
 
 }
-
+.hamburger{
+display:none;
+}
 .navItem {
     position: relative;
     padding: 10px 15px;
