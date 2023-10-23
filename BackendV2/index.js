@@ -117,7 +117,7 @@ app.post("/createUser", async (req, res) => {
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
       rel="stylesheet"
     />
-    <title>LinuxDiary 4.0</title>
+    <title>OSD 4.0</title>
   </head>
 
   <body style="font-family: 'Poppins', sans-serif">

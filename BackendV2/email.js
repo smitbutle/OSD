@@ -12,7 +12,7 @@ const sendEmail = async (email, subject, text) => {
           },
         });
       await transporter.sendMail({
-        from: process.env.EMAIL,
+        from: `WLUG <${process.env.EMAIL}>`,
         to: email,
         subject: subject,
         html: text,
